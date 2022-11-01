@@ -604,7 +604,7 @@ sea_ice %>%
 
 # Arctic sea-ice
 
-$$\mathtt{extent}_i \sim f(\mathtt{year}_i, \mathtt{day\_of\_year}_i) + \gamma_{j(\mathtt{year}_i)}
+$$\texttt{extent}_i \sim f(\texttt{year}_i, \texttt{day\_of\_year}_i) + \gamma_{j(\texttt{year}_i)}
 $$
 
 ```{r, echo = TRUE}
