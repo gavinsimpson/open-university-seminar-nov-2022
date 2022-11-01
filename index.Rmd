@@ -604,7 +604,9 @@ sea_ice %>%
 
 # Arctic sea-ice
 
-$$\texttt{extent}_i \sim f(\texttt{year}_i, \texttt{day}_i) + \gamma_{j(\texttt{year}_i)}$$
+$$\texttt{extent}_i \sim \mathcal{G}(\mu_i, \sigma^2)$$
+
+$$\mu_i = f(\texttt{year}_i, \texttt{day}_i) + \gamma_{j(\texttt{year}_i)}$$
 
 ```{r, echo = TRUE}
 m <- bam(extent ~ s(year, k = 20, bs = "cr") +
